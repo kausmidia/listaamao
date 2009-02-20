@@ -1,0 +1,2 @@
+module ChecklistasHelper
+end

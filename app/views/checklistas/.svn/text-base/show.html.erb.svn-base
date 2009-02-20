@@ -1,0 +1,12 @@
+<div class="titulo">
+  <h2><%=h @checklista.lista %></h2>
+  <span class="principal"><%= link_to 'voltar para minhas listas', checklistas_path %></span>
+</div>
+<p style="color: green"><%= flash[:notice] %><br><br></p>
+<p><%= link_to new_produtos_path(@checklista) %></p>
+<p>&nbsp;</p>
+<ul>
+    <%= render :partial => @checklista.produtos %>
+</ul>
+<p><input class="btn" name="comprasFeitas" type="button" value="compras feitas" alt="compras feitas"/></p>
+<p>&nbsp;</p>

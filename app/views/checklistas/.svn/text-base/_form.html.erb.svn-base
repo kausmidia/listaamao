@@ -1,0 +1,6 @@
+<% form_for(@checklista) do |f| %>
+    <div class="error"><%= f.error_messages %></div>
+    <%= f.label :'Nome da lista' %><br />
+    <%= f.text_field :lista %>&nbsp;&nbsp;<%= f.submit "Salvar" %>
+    <br />
+<% end %>

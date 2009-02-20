@@ -1,0 +1,21 @@
+<div class="titulo">
+  <h2>Minhas listas</h2>
+  <span class="principal"><%= link_to 'adicionar uma nova lista +', new_checklista_path %></span>
+</div>
+<p style="color: green"><%= flash[:notice] %></p>
+<ul>  
+  <% for listagem in @checklistas %>
+  <li class="item">
+    <div class="linha">
+        <%= link_to h(listagem.lista), listagem %>
+    </div>
+    <div class="box">
+      <%= link_to 'editar', edit_checklista_path(listagem) %> |
+      <%= link_to 'excluir', listagem, :confirm => 'Confirma exclusão?', :method => :delete %>
+      <!-- <input type="checkbox" onclick="" />-->
+    </div>
+  </li>
+  <% end %>
+</ul>
+<p><input class="btn" name="comprasFeitas" type="button" value="compras feitas" alt="compras feitas"/></p>
+<p>&nbsp;</p>

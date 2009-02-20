@@ -1,0 +1,155 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d7f0002, pid=6208, tid=6456
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0_01-b07 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0x30002]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0227f800):  JavaThread "CompilerThread0" daemon [_thread_in_native, id=6456]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x49c88740
+
+Registers:
+EAX=0x49c88740, EBX=0x0129f88c, ECX=0x00000000, EDX=0x00000001
+ESP=0x0129f7fc, EBP=0xffffffff, ESI=0x0129f898, EDI=0x28e74cf0
+EIP=0x6d7f0002, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x0129f7fc)
+0x0129f7fc:   0129f84c 29c84f60 0129f868 00000000
+0x0129f80c:   28e745a0 0000001c 0129f84c 29c5ae10
+0x0129f81c:   0129f868 29c88760 00000315 00000107
+0x0129f82c:   6d7f01c7 28e78fb4 28e73d80 0129fa2c
+0x0129f83c:   00000000 6d7f0216 29c84f60 0129f9f0
+0x0129f84c:   00000107 0000003f 00000003 29c87f00
+0x0129f85c:   00000000 29c881c8 00000107 29c881f0
+0x0129f86c:   00000107 29c88218 00000107 00000107 
+
+Instructions: (pc=0x6d7f0002)
+0x6d7efff2:   c1 ea 05 8d 04 90 83 e1 1f ba 01 00 00 00 d3 e2
+0x6d7f0002:   09 10 8b 16 8b 4e 04 4a 8b c2 89 16 8b 04 81 3b 
+
+
+Stack: [0x01250000,0x012a0000),  sp=0x0129f7fc,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x30002]
+
+
+Current CompileTask:
+C1:3065  !   ruby.jit.ruby.C_3a_.Program_20_Files.NetBeans_20_6_dot_5.ruby2.jruby_minus_1_dot_1_dot_4.lib.ruby.$1_dot_8.webrick.httpserver.run25667076_31955655.rescue_1$RUBY$__rescue__(Lorg/jruby/runtime/ThreadContext;Lorg/jruby/runtime/builtin/IRubyObject;Lorg/jruby/runtime/Block;)Lorg/jruby/runtime/builtin/IRubyObject; (361 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x28e6c400 JavaThread "Thread-18437" daemon [_thread_in_native, id=8136]
+  0x28e6cc00 JavaThread "Thread-18396" daemon [_thread_in_native, id=6720]
+  0x02286400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=7444]
+=>0x0227f800 JavaThread "CompilerThread0" daemon [_thread_in_native, id=6456]
+  0x0227f000 JavaThread "Attach Listener" daemon [_thread_blocked, id=7760]
+  0x0227e800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4888]
+  0x02271c00 JavaThread "Finalizer" daemon [_thread_blocked, id=456]
+  0x02265c00 JavaThread "Reference Handler" daemon [_thread_blocked, id=3168]
+  0x021eec00 JavaThread "main" [_thread_in_native, id=8128]
+
+Other Threads:
+  0x02261c00 VMThread [id=7348]
+  0x02287800 WatcherThread [id=7860]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4160K, used 1395K [0x042d0000, 0x04750000, 0x06a30000)
+  eden space 3712K,  30% used [0x042d0000, 0x043e7e78, 0x04670000)
+  from space 448K,  61% used [0x04670000, 0x046b4ea8, 0x046e0000)
+  to   space 448K,   0% used [0x046e0000, 0x046e0000, 0x04750000)
+ tenured generation   total 55116K, used 45012K [0x06a30000, 0x0a003000, 0x242d0000)
+   the space 55116K,  81% used [0x06a30000, 0x096250d8, 0x09625200, 0x0a003000)
+ compacting perm gen  total 20992K, used 20875K [0x242d0000, 0x25750000, 0x282d0000)
+   the space 20992K,  99% used [0x242d0000, 0x25732dc8, 0x25732e00, 0x25750000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files\Java\jre1.6.0_01\bin\java.exe
+0x76e40000 - 0x76f67000 	C:\Windows\system32\ntdll.dll
+0x75960000 - 0x75a3b000 	C:\Windows\system32\kernel32.dll
+0x76970000 - 0x76a36000 	C:\Windows\system32\ADVAPI32.dll
+0x75750000 - 0x75812000 	C:\Windows\system32\RPCRT4.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre1.6.0_01\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files\Java\jre1.6.0_01\bin\client\jvm.dll
+0x75b90000 - 0x75c2d000 	C:\Windows\system32\USER32.dll
+0x75e10000 - 0x75e5b000 	C:\Windows\system32\GDI32.dll
+0x73c90000 - 0x73cc2000 	C:\Windows\system32\WINMM.dll
+0x76a40000 - 0x76aea000 	C:\Windows\system32\msvcrt.dll
+0x75a40000 - 0x75b84000 	C:\Windows\system32\ole32.dll
+0x758d0000 - 0x7595d000 	C:\Windows\system32\OLEAUT32.dll
+0x73c50000 - 0x73c89000 	C:\Windows\system32\OLEACC.dll
+0x77050000 - 0x7706e000 	C:\Windows\system32\IMM32.DLL
+0x76ca0000 - 0x76d68000 	C:\Windows\system32\MSCTF.dll
+0x754f0000 - 0x7551c000 	C:\Windows\system32\apphelp.dll
+0x76f70000 - 0x76f79000 	C:\Windows\system32\LPK.DLL
+0x76c20000 - 0x76c9d000 	C:\Windows\system32\USP10.dll
+0x6d310000 - 0x6d318000 	C:\Program Files\Java\jre1.6.0_01\bin\hpi.dll
+0x75620000 - 0x75627000 	C:\Windows\system32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files\Java\jre1.6.0_01\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files\Java\jre1.6.0_01\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files\Java\jre1.6.0_01\bin\zip.dll
+0x6d560000 - 0x6d569000 	C:\Program Files\Java\jre1.6.0_01\bin\management.dll
+0x001f0000 - 0x00209000 	C:\Users\kaus\AppData\Local\Temp\jna20012.tmp
+0x6d570000 - 0x6d583000 	C:\Program Files\Java\jre1.6.0_01\bin\net.dll
+0x75820000 - 0x7584d000 	C:\Windows\system32\WS2_32.dll
+0x76fd0000 - 0x76fd6000 	C:\Windows\system32\NSI.dll
+0x74cd0000 - 0x74d0b000 	C:\Windows\system32\mswsock.dll
+0x74d40000 - 0x74d45000 	C:\Windows\System32\wship6.dll
+0x6d590000 - 0x6d599000 	C:\Program Files\Java\jre1.6.0_01\bin\nio.dll
+0x74680000 - 0x7468f000 	C:\Windows\system32\NLAapi.dll
+0x74f90000 - 0x74fa9000 	C:\Windows\system32\IPHLPAPI.DLL
+0x74e90000 - 0x74ec5000 	C:\Windows\system32\dhcpcsvc.DLL
+0x751a0000 - 0x751cc000 	C:\Windows\system32\DNSAPI.dll
+0x75550000 - 0x75564000 	C:\Windows\system32\Secur32.dll
+0x74f80000 - 0x74f87000 	C:\Windows\system32\WINNSI.DLL
+0x74f00000 - 0x74f21000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x72200000 - 0x7220f000 	C:\Windows\system32\napinsp.dll
+0x72040000 - 0x72052000 	C:\Windows\system32\pnrpnsp.dll
+0x72070000 - 0x72078000 	C:\Windows\System32\winrnr.dll
+0x75dc0000 - 0x75e0a000 	C:\Windows\system32\WLDAP32.dll
+0x013c0000 - 0x013e5000 	C:\Program Files\Bonjour\mdnsNSP.dll
+0x749a0000 - 0x749a5000 	C:\Windows\System32\wshtcpip.dll
+0x72240000 - 0x72246000 	C:\Windows\system32\rasadhlp.dll
+0x74a60000 - 0x74a9b000 	C:\Windows\system32\rsaenh.dll
+0x75570000 - 0x7558e000 	C:\Windows\system32\USERENV.dll
+
+VM Arguments:
+jvm_args: -Xverify:none -da -Xmx512m -Xss1024k -Djruby.base=C:\Program Files\NetBeans 6.5\ruby2\jruby-1.1.4 -Djruby.home=C:\Program Files\NetBeans 6.5\ruby2\jruby-1.1.4 -Djruby.lib=C:\Program Files\NetBeans 6.5\ruby2\jruby-1.1.4\lib -Djruby.shell=cmd.exe -Djruby.script=jruby.bat
+java_command: org.jruby.Main script\server webrick --port 8080
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jre1.6.0_01
+CLASSPATH=.;C:\Program Files\Java\jre1.6.0_01\lib\ext\QTJava.zip
+PATH=C:\Program Files\NetBeans 6.5\ruby2\jruby-1.1.4\bin;C:\Program Files\Nokia\PC Connectivity Solution\;c:\ruby\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\hp\bin\Python;C:\Program Files\QuickTime\QTSystem\
+USERNAME=kaus
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 11, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6001 Service Pack 1
+
+CPU:total 4 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 2086480k(675552k free), swap 4194303k(1853116k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0_01-b07) for windows-x86, built on Apr  7 2007 00:09:33 by "java_re" with unknown MS VC++:1310
+

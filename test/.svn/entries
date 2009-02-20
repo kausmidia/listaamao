@@ -1,0 +1,74 @@
+9
+
+dir
+2
+https://listaamao.googlecode.com/svn/test
+https://listaamao.googlecode.com/svn
+
+
+
+2009-02-10T18:30:08.737498Z
+2
+kausmidia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+577b7442-f79f-11dd-9fdb-3debd5008f28
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2009-02-10T19:24:52.060488Z
+30478106e9df8977e79fc045df799e29
+2009-02-10T18:30:08.737498Z
+2
+kausmidia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1797
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

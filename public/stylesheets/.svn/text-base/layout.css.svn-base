@@ -1,0 +1,76 @@
+/* 
+    Document   : layout
+    Created on : 21/01/2009, 19:23:50
+    Author     : kaus
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* reset all styles */
+* { margin: 0; padding: 0; background-repeat: no-repeat; background-position: top; }
+
+/* body */
+body { font-size: 12px; color: #999; background-color:#FFF; font-family: Arial; }
+
+input[type=button] { font-family:Arial; font-size:12px;  }
+input[type=checkbox] { padding-top:2px; }
+
+a {color:#ff3c00;}
+a:hover {color:#990000; }
+
+ul { border-top:1px solid #d6d6d6; list-style:none; }
+li { border-bottom:1px solid #d6d6d6; }
+
+#header { height:55px; background:url(../images/topoBg.jpg) repeat-x bottom;}
+#header .logo { background-image:url(../images/logo.png); }
+#header .logo h1 { height:55px; width:140px; }
+#header .logo h1 span { display: none; }
+#header a { position: absolute; top: 25px; right:30px; }
+
+#conteudo { margin:30px; padding:0px 10px; }
+#conteudo .titulo { height:48px; margin-bottom:30px; padding:0px 10px 0 10px; border:1px solid #dedede; background:url(../images/tituloBg.jpg) repeat-x; }
+#conteudo .titulo h2 { float:left; font-size: 24px; color:#ff3c00; line-height:48px; }
+#conteudo .titulo .principal { float:right; font-weight:bold; line-height:48px; padding-top:4px; }
+#conteudo .titulo .principal a { color: #999; text-decoration:none; }
+#conteudo .titulo .principal a:hover { color: #515151; text-decoration:none; }
+
+#conteudo p { margin-left:10px; }
+
+#conteudo ul { margin-bottom:20px; }
+#conteudo ul li.item { height:20px; line-height:20px; color:#535353; font-weight:bold; padding:5px 10px; font-size:12px; }
+#conteudo ul li.item:hover { background-color:#e9e9e9; }
+
+#conteudo ul li.item a { font-weight:normal; }
+#conteudo ul li.item a:hover {  }
+
+#conteudo ul li div.linha { float:left; font-size:18px; }
+#conteudo ul li div.linha a { color:#535353; text-decoration:none; font-weight:bold; }
+
+#conteudo ul li div.box { font-weight:normal; color:#333; float:right; }
+#conteudo ul li div.box a:hover { background-color:transparent; }
+
+#formulario { border-top:1px solid #dedede; border-bottom:1px solid #dedede; margin:0 0 15px 0; padding:9px; }
+#formulario .fieldWithErrors { display:inline; }
+#formulario .fieldWithErrors input { background-color:yellow; color:#515151; }
+#formulario #errorExplanation { border:1px dotted #ff0000; padding:5px; margin-bottom:12px; }
+#formulario #errorExplanation h2 { font-size:12px; color:#ff0000; }
+#formulario #errorExplanation p {  }
+#formulario #errorExplanation ul { border:0; margin:0; padding:0; }
+#formulario #errorExplanation li { border:0; text-indent:2px; color:#515151; }
+
+#conteudo ul li .action-todos:hover { background-color:#fff; }
+
+#conteudo ul li .itemCampo { height:20px; }
+
+
+#conteudo .fim { text-align:center; }
+
+#conteudo .marcado { font-weight:bold; color:#333333; }
+
+
+#rodape { position:absolute; bottom:0; height:20px; width:100%; background:url(../images/rodapeBg.jpg) repeat-x; font-size:10px; color:#535353; text-align:center; padding-top:15px; }
+#rodape a {color: #535353;}
+#rodape a:hover {color: #999;}
+
+root { display: block; }
+

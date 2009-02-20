@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/2/app/controllers
+END
+checklistas_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/app/controllers/checklistas_controller.rb
+END
+produtos_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/app/controllers/produtos_controller.rb
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/app/controllers/application.rb
+END

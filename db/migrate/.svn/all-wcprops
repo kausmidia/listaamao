@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/2/db/migrate
+END
+20090121211754_create_checklistas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2/db/migrate/20090121211754_create_checklistas.rb
+END
+20090122143226_create_produtos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/db/migrate/20090122143226_create_produtos.rb
+END

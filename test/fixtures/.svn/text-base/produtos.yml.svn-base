@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  comprado: false
+  reference: 
+
+two:
+  nome: MyString
+  comprado: false
+  reference: 

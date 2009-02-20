@@ -1,0 +1,9 @@
+<div class="titulo">
+  <h2>Minhas listas: <em>Adicionar</em></h2>
+  <span class="principal"><%= link_to 'voltar para minhas listas', checklistas_path %></span>
+</div>
+<div id="formulario">
+  <%= render :partial => "form" %>
+</div>
+<p><input class="btn" name="comprasFeitas" type="button" value="compras feitas" alt="compras feitas"/></p>
+<p>&nbsp;</p>
